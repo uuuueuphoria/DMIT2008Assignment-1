@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Time Stock Tracker</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="app-header">
+      <div class="header-content">
+        <!-- header and tagline -->
+        <h1 class="title">Real Time Stock Tracker</h1>
+        <p class="tagline">Check your favorite stock now</p>
+      </div>
+    </header>
+    <main class="container">
+      <!-- for layout purpose, putting image and input box side by side -->
+      <div class="side-by-side">
+        <img src="img/stock.png" alt="stock growth" />
+        <div class="wrap">
+          <label for="keyword">Stock Name/Keyword:</label>
+          <input type="text" name="keyword" id="keywork" />
+          <button type="submit">Search</button>
+        </div>
+      </div>
+
+      <aside class="display"></aside>
+    </main>
     <script src="js/index.js" type="module"></script>
   </body>
 </html>

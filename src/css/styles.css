@@ -109,3 +109,79 @@ body {
   text-align: left;
   background-color: #fff;
 }
+
+.app-header {
+  width: 100%;
+  padding: 4rem 0 2rem;
+  background-color: #f5fbff;
+  text-align: center;
+  -webkit-box-shadow: 0 0 2px 0 #b1bbc3;
+  box-shadow: 0 0 2px 0 #b1bbc3;
+  font-family: 'Noto Sans', sans-serif;
+}
+img {
+  margin: 2rem auto;
+  max-width: 300px;
+  display: block;
+}
+
+.app-header h1 {
+  font-size: calc(1rem + 4.5vmax);
+  font-weight: 700;
+  color: #5c462c;
+  line-height: calc(1rem + 5vmax);
+}
+
+.app-header p {
+  font-size: calc(1rem + 2vmax);
+  color: #c5a334;
+}
+
+button {
+  display: block;
+  border: none;
+  background: rgb(37, 105, 194);
+  max-width: 300px;
+  margin: 1.5rem auto;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 60%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header-content,
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0;
+  color: #866338;
+}
+input {
+  display: block;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  margin: 0 auto;
+  color: #c5a334;
+  border: 3px solid #866338;
+  border-radius: 12px;
+}
+@media (min-width: 800px) {
+  .side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  label {
+    margin-top: 4rem;
+  }
+}
