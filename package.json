@@ -1,0 +1,31 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "This is assignment 1 for DMIT 2008",
+  "main": "index.js",
+  "scripts": {
+    "test": "concurrently \"mkdir -p src src/js src/css src/scss src/assets\" \"touch src/index.html src/js/index.js src/scss/styles.scss\"",
+    "dev": "parcel src/index.html  ",
+    "build": "parcel build src/index.html "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uuuueuphoria/DMIT2008Assignment-1.git"
+  },
+  "author": "Wanlun Xue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uuuueuphoria/DMIT2008Assignment-1/issues"
+  },
+  "homepage": "https://github.com/uuuueuphoria/DMIT2008Assignment-1#readme",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^6.14.11",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "http-server": "^0.12.3",
+    "liveserver": "^0.1.20"
+  }
+}
