@@ -8,9 +8,10 @@ const requestObject = {
 
 //write the function to get the data from url and parse into json file
 function getStockRequest(url) {
-  return fetch(url, requestObject)
-    .then((respond) => respond.json())
+  const result = fetch(url, requestObject)
+    .then((res) => res.json())
     .then((data) => data);
+  return result;
 }
 
 //export the function

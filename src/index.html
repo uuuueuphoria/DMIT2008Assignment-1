@@ -16,7 +16,7 @@
       <div class="header-content">
         <!-- header and tagline -->
         <h1 class="title">Real Time Stock Tracker</h1>
-        <p class="tagline">Check your favorite stock now</p>
+        <p class="tagline">Check your stock current price</p>
       </div>
     </header>
     <main class="container">
@@ -24,11 +24,12 @@
       <div class="side-by-side">
         <img src="img/stock.png" alt="stock growth" />
         <div class="wrap">
-          <label for="keyword">Stock Name/Keyword:</label>
+          <label for="keyword">Stock Symbol:</label>
           <input type="text" name="keyword" id="keywork" />
-          <button type="submit">Search</button>
+          <button type="submit">Check</button>
         </div>
       </div>
+      <aside class="error"></aside>
 
       <aside class="display"></aside>
     </main>

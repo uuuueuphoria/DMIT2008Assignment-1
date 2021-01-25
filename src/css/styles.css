@@ -175,6 +175,29 @@ input {
   border: 3px solid #866338;
   border-radius: 12px;
 }
+.error {
+  display: block;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  margin: 2rem auto;
+  color: red;
+}
+
+.stock-view {
+  font-size: 2.5rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: rgb(37, 105, 194);
+  -webkit-box-shadow: 0 0 2px 0 rgb(37, 105, 194);
+  box-shadow: 0 0 2px 0 rgb(37, 105, 194);
+  background: #f4f9fd;
+  padding: 0.5rem;
+  margin: 2rem auto;
+}
+span {
+  color: #c5a334;
+}
 @media (min-width: 800px) {
   .side-by-side {
     display: flex;
