@@ -12,6 +12,16 @@
 
 **How to run the app:** type "npm run dev" in terminal
 
-**List of special tools:** This app uses npm and bundled by Parcel. Live server is enabled to deploy the app locally. Ejs is used as template to display data.
+**List of special tools:**
+
+- This app uses npm as JavaScript node package manager. The link for npm is (https://www.npmjs.com/package/npm)
+
+- The project is bundled by Parcel. The link for Parcel is (https://parceljs.org/)
+
+- Live server is enabled to load the app locally. The link for live server is (https://www.npmjs.com/package/live-server)
+
+- Ejs is used as template to generate HTML markup to display data. The link for EJS is (https://ejs.co/)
+
+- Alpha Vantage API is used in this project, the document for Alpha Vantage API is here (https://www.alphavantage.co/documentation/)
 
 **Link of working demo:** https://instant-stock-tracker-app.netlify.app
