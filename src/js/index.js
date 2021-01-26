@@ -24,7 +24,7 @@ window.addEventListener('load', function (e) {
       ).then((data) => {
         setStocks(data);
         //if the user input an valid stock, retrieve the stock info and display the result
-        if (data['Error Message'] == undefined) {
+        if (data['Global Quote']['01. symbol'] != undefined) {
           const temp = getStockInfo();
           document.querySelector('.display').append(temp);
         } else {
