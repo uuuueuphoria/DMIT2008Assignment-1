@@ -1,12 +1,13 @@
-//write a ejs template to show stock name as header, current close price, current date and current volume
-//"data['Meta Data']['3. Last Refreshed']" is used to find the latest data and time
+//write a ejs template to show stock symbol, current price, previous close price, current date, current volume, latest trading day and percent of change
 const stockView = `
     <div class="stock-view">
-        <p><span>Stock ticker symbol: </span><%=data['Meta Data']['2. Symbol']%></p>
-        <p><span>Current close price: </span><%=data['Time Series (1min)'][data['Meta Data']['3. Last Refreshed']]['4. close']%></p>
+        <p><span>Stock ticker symbol: </span><%=data['Global Quote']['01. symbol']%></p>
+        <p><span>Current price: </span>$<%=data['Global Quote']['05. price']%></p>
+        <p><span>Previous close price: </span>$<%=data['Global Quote']['08. previous close']%></p>
+        <p><span>Change percent:</span> <%=data['Global Quote']['10. change percent']%></p>
+        <p><span>Current volume: </span><%=data['Global Quote']['06. volume']%></p> 
         <p><span>Current date:</span> <%=new Date()%></p>
-        <p><span>Last refreshed date:</span> <%=data['Meta Data']['3. Last Refreshed']%></p>
-        <p><span>Current volume: </span><%=data['Time Series (1min)'][data['Meta Data']['3. Last Refreshed']]['5. volume']%></p>  
+        <p><span>Latest trading day:</span> <%=data['Global Quote']['07. latest trading day']%></p>   
      </div>
 `;
 

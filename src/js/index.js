@@ -18,7 +18,7 @@ window.addEventListener('load', function (e) {
     if (valid != '') {
       document.querySelector('.error').textContent = '';
       const dataRequest = getStockRequest(
-        'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' +
+        'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' +
           valid +
           '&interval=1min&apikey=SEHS7IHXN02VEG7'
       ).then((data) => {
